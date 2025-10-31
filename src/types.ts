@@ -10,3 +10,9 @@ export type Tcar = {
     export type AddCarProps = {
         handleAdd: (car: Tcar) => void;
     }
+
+    export type EditCarProps = {
+        url: string;
+        currentCar: Tcar;
+        handleUpdate: (url: string, car: Tcar) => void;
+    }
